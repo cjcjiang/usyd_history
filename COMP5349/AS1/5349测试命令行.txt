@@ -1,0 +1,40 @@
+yjia4072的hdfs文件夹
+hdfs dfs -ls /user/yjia4072
+
+上传文件
+hdfs dfs -put taskThreePartOneOutput taskThreePartOneOutput
+
+删除place.txt
+hdfs dfs -rm place.txt
+
+删除test-task文件夹
+hdfs dfs -rm -r tmpTaskOneOut
+hdfs dfs -rm -r tmpTaskTwoOut
+hdfs dfs -rm -r tmpTaskThreePartOneOut
+hdfs dfs -rm -r tmpTaskThreePartTwoOut
+hdfs dfs -rm -r test-task-three-single
+hdfs dfs -rm -r test-task-one-all
+hdfs dfs -rm -r test-task-two-all
+hdfs dfs -rm -r test-task-three-all
+
+hadoop合并结果文件
+hadoop fs -getmerge /user/yjia4072/test-task final.txt
+
+测试taskOne单个
+hadoop jar as1-5349.jar taskThree.TaskOneDriver /share/place.txt /share/photo/n07.txt test-task-single
+测试taskOne全部
+hadoop jar as1-5349.jar taskThree.TaskOneDriver /share/place.txt /share/photo/ test-task-one-all
+
+测试taskTwo单个
+hadoop jar as1-5349.jar taskThree.TaskTwoChainDriver /share/place.txt /share/photo/n07.txt test-task-single
+测试taskTwo全部
+hadoop jar as1-5349.jar taskThree.TaskTwoChainDriver /share/place.txt /share/photo/ test-task-two-all
+
+测试TaskThree单个
+hadoop jar as1-5349.jar taskThree.TaskThreeChainDriver /share/place.txt /share/photo/n07.txt test-task-three-single
+
+测试TaskThree全部
+hadoop jar as1-5349.jar taskThree.TaskThreeChainDriver /share/place.txt /share/photo/ test-task-three-all
+
+给taskTwo打包成jar
+ant -buildfile build_task_two.xml jar

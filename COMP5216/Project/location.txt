@@ -1,0 +1,34 @@
+latitude lontitude
+
+1. Fisher Library - The University of Sydney Library, F03, University of Sydney, Eastern Avenue
+Camperdown NSW 2006 
+-33.886592, 151.190397
+
+2. 香港理工大學, Z座
+香港
+22.306855, 114.179546
+
+3. 北京市海淀區
+中國
+40.004871, 116.325296
+
+4 Main building 2
+Indian Institute of Technology Delhi, Hauz Khas, New Delhi, Delhi 110016印度
+28.543360, 77.193355
+
+5. 劍橋大學英國 Cambridge, Trinity Lane, London
+邮政编码: CB2 1TN
+52.204296, 0.114767
+
+6. 哈佛大學美國 Massachusetts, Cambridge, Boston
+邮政编码: 02138
+42.377068, -71.116709
+
+7. Golden Fang, 10A City Road
+Darlington NSW 2008
+-33.884967, 151.194903
+
+悉尼到北京8958.22公里
+悉尼到印度 10436.34 公里
+悉尼到伦敦 17012.97公里
+悉尼到麻省理工 16255.32公里

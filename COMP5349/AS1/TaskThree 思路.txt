@@ -1,0 +1,46 @@
+Task Three Part One:
+Mapper
+Distributed cache: task two结果（localityName \t numberOfPhotos）
+输入文件：place.txt（place-url，place-id）
+输出key：localityName \t numberOfPhotos 输出value：place-id
+
+Task Three Part Two:
+Mapper
+Distributed cache：Task Three Part One的结果（localityName \t numberOfPhotos \t place-id）
+输入文件：所有photo（place-id，tag）
+输出key：localityName \t numberOfPhotos \t tag 输出value：1
+Reducer
+输入key：localityName \t numberOfPhotos \t tag 输入value：1
+输出key：localityName \t numberOfPhotos \t tag 输出value：这个tag的出现次数
+
+Task Three Part Three
+Mapper
+输入文件：Part Two的结果localityName \t numberOfPhotos \t tag \t 这个tag的出现次数
+输出key：localityName \t numberOfPhotos \t 这个tag的出现次数
+输出value：tag
+
+Reducer
+输入key：localityName \t numberOfPhotos \t 这个tag的出现次数
+输入value：tag
+输出key：localityName \t numberOfPhotos 
+输出value：（tag：这个tag出现的次数）共10个
+
+Comparator
+根据freq降序排列
+根据localityName升序排列
+Partitioner
+根据localityName分组
+GroupComparator
+根据localityName分组
+
+
+
+
+
+
+
+
+
+
+
+

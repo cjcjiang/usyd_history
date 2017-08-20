@@ -1,0 +1,59 @@
+export PATH=/usr/local/spark/bin:$PATH
+
+hdfs dfs -rm -r demo/task_one_result_small
+hdfs dfs -rm demo/task_two_result_small
+hdfs dfs -rm demo/task_three_result_small
+hdfs dfs -rm -r demo/task_one_result
+hdfs dfs -rm demo/task_two_result
+hdfs dfs -rm demo/task_three_result
+
+hdfs dfs -get demo/task_two_result task_two_result_small
+hdfs dfs -get demo/task_three_result task_three_result_small
+hdfs dfs -get demo/task_two_result task_two_result
+hdfs dfs -get demo/task_three_result task_three_result
+
+mvn clean install -Pbuild-jar
+
+
+flink run -m yarn-cluster -yn 3 \
+-c ml.TaskTwo \
+target/ml-1.0-SNAPSHOT.jar \
+--measurements-dir hdfs:////share/cytometry/demo.txt \
+--num_iters 10 \
+--dimension_name "Ly6C,CD11b,SCA1" \
+--k_num 4 \
+--output hdfs:////user/yjia4072/demo/task_two_result
+
+flink run -m yarn-cluster -yn 3 \
+-c ml.TaskThree \
+target/ml-1.0-SNAPSHOT.jar \
+--measurements-dir hdfs:////share/cytometry/demo.txt \
+--t2_out hdfs:////user/yjia4072/demo/task_two_result \
+--num_iters 10 \
+--dimension_name "Ly6C,CD11b,SCA1" \
+--output hdfs:////user/yjia4072/demo/task_three_result
+
+
+
+python plot_clusters.py centroids task_two_result task_two_plot
+python plot_clusters.py centroids task_three_result task_three_plot
+
+flink run -m yarn-cluster -yn 3 \
+-c ml.TaskTwo \
+target/ml-1.0-SNAPSHOT.jar \
+--measurements-dir hdfs:////share/cytometry/large \
+--num_iters 10 \
+--dimension_name "Ly6C,CD11b,SCA1" \
+--k_num 4 \
+--output hdfs:////user/yjia4072/demo/task_two_result
+
+flink run -m yarn-cluster -yn 3 \
+-c ml.TaskThree \
+target/ml-1.0-SNAPSHOT.jar \
+--measurements-dir hdfs:////share/cytometry/large \
+--t2_out hdfs:////user/yjia4072/demo/task_two_result \
+--num_iters 10 \
+--dimension_name "Ly6C,CD11b,SCA1" \
+--output hdfs:////user/yjia4072/demo/task_three_result
+
+

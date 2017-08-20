@@ -1,0 +1,13 @@
+cd "C:\Program Files\MongoDB\Server\3.4\bin"
+
+.\mongod.exe --dbpath C:\mongodb --smallfiles
+
+.\mongoimport --jsonArray --db wikipedia --collection revisions --file "C:\Users\cjcji\Desktop\COMP5347\AS2\guide\revisions\Adrian Cole (RAAF officer).json"
+
+FOR %i IN ("C:\Users\cjcji\Desktop\COMP5347\AS2\guide\demo_data\*.json") DO .\mongoimport --jsonArray --db wikipedia --collection revisions --file "%i"
+
+FOR %i IN (C:\Users\cjcji\Desktop\COMP5347\AS2\guide\revisions\*.json) DO .\mongoimport --jsonArray --db wikipedia --collection revisions --file "%i"
+
+.\mongoimport --jsonArray --db wikipedia --collection bot --file "C:\Users\cjcji\Desktop\COMP5347\AS2\guide\bot.json"
+
+.\mongoimport --jsonArray --db wikipedia --collection admin --file "C:\Users\cjcji\Desktop\COMP5347\AS2\guide\admin.json"

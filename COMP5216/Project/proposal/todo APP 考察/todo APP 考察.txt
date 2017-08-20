@@ -1,0 +1,11 @@
+Any.DO
+主界面只显示excert of note
+没有search box
+有时间提醒
+位置提醒付费
+只有优先级和日期排序
+
+Todoist
+主界面有搜索
+与地址无关
+所有提醒均需付费

@@ -1,0 +1,93 @@
+hdfs dfs -rm -r AS3_result/spark_test
+hdfs dfs -rm -r AS3_result/spark_small
+hdfs dfs -rm -r AS3_result/spark_large
+
+yarn application -kill application_1493779573130_9514
+
+spark-submit \
+--class ml.TaskOne \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/test/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_test/
+
+spark-submit \
+--class ml.TaskOne \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/small/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_small/
+
+spark-submit \
+--class ml.TaskOne \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/large/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_large/
+
+spark-submit \
+--class ml.TaskTwo \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/test/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_test/ \
+0.3 \
+5
+
+spark-submit \
+--class ml.TaskTwo \
+--master yarn \
+--num-executors 10 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/small/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_small/ \
+0.3 \
+5
+
+spark-submit \
+--class ml.TaskTwo \
+--master yarn \
+--num-executors 25 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/share/genedata/large/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_large/ \
+0.3 \
+5
+
+spark-submit \
+--class ml.TaskThree \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_test/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_test/ \
+0.6
+
+spark-submit \
+--class ml.TaskThree \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_small/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_small/ \
+0.6
+
+spark-submit \
+--class ml.TaskThree \
+--master yarn \
+--num-executors 3 \
+sparkML.jar \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_large/ \
+hdfs://soit-hdp-pro-1.ucc.usyd.edu.au:8020/user/yjia4072/AS3_result/spark_large/ \
+0.6
+
+
+
+
+
+
+

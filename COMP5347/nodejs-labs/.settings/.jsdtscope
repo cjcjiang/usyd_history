@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/accepts"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/array-flatten"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/content-disposition"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/content-type"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/cookie"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/cookie-signature"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js|src/" kind="src" path="node_modules/debug"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/debug/src"/>
+	<classpathentry excluding="lib/browser/|lib/compat/|**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/depd"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/depd/lib/browser"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/depd/lib/compat"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/destroy"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/ee-first"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/encodeurl"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/escape-html"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/etag"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|lib/router/|lib/middleware/|lib/|**/*.min.js" kind="src" path="node_modules/express"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|middleware/|router/|**/*.min.js" kind="src" path="node_modules/express/lib"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/express/lib/middleware"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/express/lib/router"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|node_modules/debug/src/|**/*.min.js|node_modules/debug/" kind="src" path="node_modules/finalhandler"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js|src/" kind="src" path="node_modules/finalhandler/node_modules/debug"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/finalhandler/node_modules/debug/src"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/forwarded"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/fresh"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/http-errors"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/inherits"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|lib/|**/*.min.js" kind="src" path="node_modules/ipaddr.js"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/ipaddr.js/lib"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/media-typer"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/merge-descriptors"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/methods"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js|build/" kind="src" path="node_modules/mime"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/mime-db"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/mime-types"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/mime/build"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/ms"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|lib/|**/*.min.js" kind="src" path="node_modules/negotiator"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/negotiator/lib"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/on-finished"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/parseurl"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/path-to-regexp"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/proxy-addr"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/qs/dist"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/qs/lib"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/qs/test"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/range-parser"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/send"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/serve-static"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/setprototypeof"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/statuses"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/type-is"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/unpipe"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/utils-merge"/>
+	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="node_modules/vary"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

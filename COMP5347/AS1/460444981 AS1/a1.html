@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One By Yuming JIANG 460444981</title>
+   <link rel="stylesheet" href="a1.css" />
+   <script type="text/javascript" src="a1.js"></script>
+</head>
+<body>
+<form method="get" action="">
+<div id="searchBox">
+
+<input type="search" placeholder="Search titles (case sensitive)" id="searchKeyword"/>
+<input type="button" value="Search" id="searchButton"/>
+<select id="filterSelection">
+  <option value="Genre">Genre</option>
+  <option value="Baroque">Baroque</option>
+  <option value="Mannerism">Mannerism</option>
+  <option value="Neo-Classicism">Neo-Classicism</option>
+  <option value="Realism">Realism</option>
+  <option value="Romanticism">Romanticism</option>
+</select>
+<input type="button" value="Filter" id="filterButton"/>
+ 
+</div>
+<div id="artistBox">
+
+<table>
+  <caption>Paintings</caption>
+  <thead>
+  <tr>
+    <th></th>
+	<th></th>
+    <th>Title</th>
+    <th>Artist</th>
+	<th>Year</th>
+	<th>Genre</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="picture" id="05030">
+    <td><input type="checkbox"/></td>
+    <td><img src="images/05030.jpg" alt="Death of Marat"/></td>
+	<td class="title">Death of Marat</td>
+	<td>David,Jacques-Louis</td>
+	<td>1793</td>
+	<td class="genre">Romanticism</td>
+  </tr>
+  <tr class="picture" id="120010">
+    <td><input type="checkbox"/></td>
+    <td><img src="images/120010.jpg" alt="Portrait of Eleanor of Toledo"/></td>
+	<td class="title">Portrait of Eleanor of Toledo</td>
+	<td>Bronzino,Agnolo</td>
+	<td>1545</td>
+	<td class="genre">Mannerism</td>
+  </tr>
+  <tr class="picture" id="07020">
+    <td><input type="checkbox"/></td>
+    <td><img src="images/07020.jpg" alt="Liberty Leading the People"/></td>
+	<td class="title">Liberty Leading the People</td>
+	<td>Delacroix,Eugene</td>
+	<td>1830</td>
+	<td class="genre">Romanticism</td>
+  </tr>
+  <tr class="picture" id="13030">
+    <td><input type="checkbox"/></td>
+    <td><img src="images/13030.jpg" alt="Arrangement in Grey and Black"/></td>
+	<td class="title">Arrangement in Grey and Black</td>
+	<td>Whistler,James Abbott</td>
+	<td>1871</td>
+	<td class="genre">Realism</td>
+  </tr>
+  <tr class="picture" id="06010">
+    <td><input type="checkbox"/></td>
+    <td><img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere"/></td>
+	<td class="title">Mademoiselle Caroline Riviere</td>
+	<td>Ingres,Jean-Auguste</td>
+	<td>1806</td>
+	<td class="genre">Neo-Classicism</td>
+  </tr>
+  </tbody>
+</table>
+ 
+</div>   
+</form>
+</body>
+</html>
